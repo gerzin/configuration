@@ -1,19 +1,23 @@
 #!/usr/bin/env bash
-alias ttt="tmux attach -t default || tmux new -s default"
 alias l="ls -G"
 alias ls="ls -G"
 alias t="touch"
 alias c="clear"
+alias v="nvim"
+alias xx="exit"
+alias lsd="ls -d */"
+alias ttt="tmux attach -t default || tmux new -s default"
+# python
 alias python="python3"
 alias p="python3"
 alias pip="pip3"
-alias v="nvim"
+# C/C++
 alias gcc="gcc -Wall -pedantic -g"
 alias clang="clang -Wall -pedantic -g"
 alias g++="g++ -Wall -pedantic -g"
 alias clang++="clang++ -std=c++17 -Wall -pedantic -g"
+# tmux
 alias tas="tmux attach-session -t"
-alias xx="exit"
-alias lsd="ls -d */"
+# docker
 alias dcsi="docker container start -i"
 alias dcs="docker container start"
