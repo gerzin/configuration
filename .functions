@@ -1,2 +1,11 @@
 #!/usr/bin/env bash
 
+# hide a file by inserting a '.' in front of its name
+# if a file is already hidden, do nothing
+function hide {
+    for f in "$@"; do
+        if [[ ! ${f::1} == '.' ]]; then
+            mv "$f" ".$f"
+        fi
+    done
+}
