@@ -16,7 +16,7 @@ mkcd() {
 }
 
 # compress files
-targz(){
+targz() {
   tar -zcvf $1.tar.gz "${@:2}"
 }
 
