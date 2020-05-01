@@ -8,7 +8,7 @@ set copyindent      " copy indent from the previous line
 
 syntax on 
 set mouse=a         " enable basic mouse support
-
+set number
 " plugins, call :PlugInstall to install
 call plug#begin()
 Plug 'terryma/vim-multiple-cursors'
