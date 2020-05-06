@@ -6,15 +6,17 @@ set expandtab       " tabs are space
 set autoindent
 set copyindent      " copy indent from the previous line
 
-syntax on 
+syntax on           " syntax highlighting 
 set mouse=a         " enable basic mouse support
-set number
+set number          " numbered lines
 " plugins, call :PlugInstall to install
 call plug#begin()
-Plug 'terryma/vim-multiple-cursors'
+Plug 'terryma/vim-multiple-cursors' " ctrl + N
 Plug 'airblade/vim-gitgutter'
 Plug 'rip-rip/clang_complete'
 Plug 'rhysd/vim-clang-format'
 call plug#end()
 
+
+let g:clang_library_path='/Library/Developer/CommandLineTools/usr/lib/libclang.dylib'
 
