@@ -13,6 +13,8 @@ set number
 call plug#begin()
 Plug 'terryma/vim-multiple-cursors'
 Plug 'airblade/vim-gitgutter'
+Plug 'rip-rip/clang_complete'
+Plug 'rhysd/vim-clang-format'
 call plug#end()
 
 
