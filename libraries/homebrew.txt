@@ -1,0 +1,4 @@
+armadillo
+pkg-config
+opencv
+python
