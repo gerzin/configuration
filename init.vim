@@ -17,6 +17,7 @@ Plug 'rip-rip/clang_complete'
 Plug 'rhysd/vim-clang-format'
 call plug#end()
 
-
-let g:clang_library_path='/Library/Developer/CommandLineTools/usr/lib/libclang.dylib'
+if has('macunix')
+  let g:clang_library_path='/Library/Developer/CommandLineTools/usr/lib/libclang.dylib'
+endif
 
