@@ -24,3 +24,9 @@ targz() {
 untargz() {
   tar -zxvf $1
 }
+
+# find the ip address
+myip() {
+    curl ifconfig.io
+}
+
