@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 alias l="ls -G"
 alias ls="ls -G"
+alias ll="ls -lh"
 alias t="touch"
 alias c="clear"
 alias v="nvim"
