@@ -30,3 +30,11 @@ myip() {
     curl ifconfig.io
 }
 
+# swap the name of two files
+swapfiles() {
+  tmp=$RANDOM
+  name=$1
+  mv $2 $tmp
+  mv $1 $2
+  mv $tmp $name
+}
