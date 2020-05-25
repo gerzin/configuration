@@ -10,6 +10,7 @@ alias hs="history | grep"
 alias xx="exit"
 alias lsd="ls -d */"
 alias ttt="tmux attach -t default || tmux new -s default"
+alias ..="cd .."
 # python
 alias python="python3"
 alias p="python3"
