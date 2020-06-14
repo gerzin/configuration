@@ -2,6 +2,7 @@
 alias l="ls -G"
 alias ls="ls -G"
 alias ll="ls -lh"
+alias la="ls -a"
 alias t="touch"
 alias c="clear"
 alias rrf="rm -rf"
@@ -25,3 +26,6 @@ alias tas="tmux attach-session -t"
 # docker
 alias dcsi="docker container start -i"
 alias dcs="docker container start"
+# git
+alias gadd="git add"
+alias gcomm="git commit -m"
