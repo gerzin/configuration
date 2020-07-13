@@ -19,5 +19,7 @@ call plug#end()
 
 if has('macunix')
   let g:clang_library_path='/Library/Developer/CommandLineTools/usr/lib/libclang.dylib'
+elseif has('unix')
+  let g:clang_library_path='/usr/lib/llvm-9/lib/libclang.so'
 endif
 
