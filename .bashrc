@@ -4,6 +4,12 @@ source .bash_functions
 
 # exports
 export PS1="\w\\$ \[$(tput sgr0)\]"
-export EDITOR='nvim'
-export PYTHONSTARTUP=~/.pythonrc
+if ! nvim -v &> /dev/null
+then
+  export EDITOR='vim'
+else
+  export EDITOR='nvim'
+fi
 
+export PYTHONSTARTUP=~/.pythonrc
+export HISTCONTROL=erasedups:ignorespace
