@@ -33,3 +33,5 @@ alias gadd="git add"
 alias gcomm="git commit -m"
 # Make
 alias make="make -j"
+# Jupyter
+alias jl="jupyter-lab"
